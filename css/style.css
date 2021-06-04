@@ -1,0 +1,254 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherist;
+}
+
+input:-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  font-family: Arial;
+  width: 100%;
+}
+
+.body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0px;
+}
+.wrap .item {
+  width: 70%;
+  margin: 10px 0px;
+}
+.wrap .title {
+  font-size: 20px;
+  margin-bottom: 7px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.wrap input {
+  font-family: Arial;
+  background: transparent;
+  width: 100%;
+  border: 2px solid black;
+  font-size: 20px;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+.wrap button {
+  background: orange;
+  font-size: 20px;
+  padding: 12px 50px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.2);
+}
+
+.button__block {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px !important;
+}
+
+.design-false-input {
+  box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.3) !important;
+}
+
+.page__wrapper {
+  padding: 50px 300px;
+  width: 100%;
+}
+
+.page__title {
+  margin: 0px 0px 100px 0px;
+}
+
+.page-data__name {
+  font-size: 40px;
+  margin: 0px 0px 40px 0px;
+}
+
+.page-data__email {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.page-data__email .page__email {
+  margin: 0px 0px 10px 0px;
+}
+
+.page-goods__container {
+  width: 100%;
+  display: grid;
+  grid-column-gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px;
+  grid-template-areas: "bike phone book";
+}
+
+.bike {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: bike;
+}
+
+.phone {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: phone;
+}
+
+.book {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: book;
+}
+
+.page__goods {
+  padding: 15px 25px;
+  border: 2px solid black;
+  border-radius: 25px;
+}
+
+.page__wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.page__goods-name {
+  height: 15%;
+  font-size: 20px;
+}
+
+.page__goods-img {
+  height: 70%;
+  width: 100%;
+}
+.page__goods-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.page__goods-price {
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+.page__goods-price button {
+  height: 70%;
+  padding: 0px 20px;
+  background: orange;
+  border-radius: 5px;
+}
+
+.goods-discount__block {
+  display: none;
+}
+
+.goods-discount__block.active-discount {
+  display: inline-block;
+  color: green;
+  font-size: 19px;
+}
+
+.goods-price__block.active-discount {
+  position: relative;
+  font-size: 14px;
+  color: rgba(255, 0, 0, 0.6);
+}
+.goods-price__block.active-discount:after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid rgba(255, 0, 0, 0.5);
+  width: 100%;
+  margin-left: -100%;
+  margin-top: 8px;
+}
+
+.page__date-pay {
+  margin-top: 5px;
+  opacity: 0;
+}
+
+.page__date-pay.active-discount {
+  opacity: 1;
+}
+
+.error__text {
+  color: red;
+}
