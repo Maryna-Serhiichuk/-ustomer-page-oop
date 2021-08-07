@@ -16,6 +16,10 @@ let date = new Date();
 
 let nowDay = date.getDate();
 let nowMonth = date.getMonth();
+nowMonth = nowMonth + 1;
+if(nowMonth == 12){
+	nowMonth = 1;
+}
 let nowYear = date.getFullYear();
 
 let messageErrorText = document.querySelectorAll('.error__text');
